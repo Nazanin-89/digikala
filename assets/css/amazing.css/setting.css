@@ -7,18 +7,7 @@
 }
 @font-face {
   font-family: digi;
-  src: url(./font/digikala-variable.16j_2qc1xkb87.woff2);
-}
-@font-face {
-  font-family: digi;
-  src: url("../fonts/IRANYekanWebRegular.woff2") format("woff2");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: digi;
-  src: url("../fonts/IRANYekanWebBold.woff2") format("woff2");
-  font-weight: 700;
+  src: url("./font/digikala-variable.16j_2qc1xkb87.woff2");
 }
 html {
   font-family: digi;
