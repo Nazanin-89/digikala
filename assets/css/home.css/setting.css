@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+@font-face {
+  font-family: digi;
+  src: url(./font/digikala-variable.16j_2qc1xkb87.woff2);
+}
+@font-face {
+  font-family: digi;
+  src: url("../fonts/IRANYekanWebRegular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: digi;
+  src: url("../fonts/IRANYekanWebBold.woff2") format("woff2");
+  font-weight: 700;
+}
+html {
+  font-family: digi;
+  direction: rtl;
+}
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}

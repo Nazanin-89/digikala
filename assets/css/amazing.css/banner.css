@@ -1,0 +1,564 @@
+.amazing-page {
+  width: 100%;
+  direction: rtl;
+}
+.amazing-title-banner {
+  width: 100%;
+  height: 60px;
+  background-color: #ef394e;
+  /* background-image: url(); */
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: auto 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amazing-title-banner h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.hourly-offers {
+  width: calc(100% - 30px);
+  margin: 15px auto;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #e9003d;
+  /* background-image: url(""); */
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: 616px auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.hourly-offers-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hourly-offers-header h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+.hourly-offers-icon {
+  font-size: 22px;
+  color: #ffffff;
+}
+.hourly-offers-slider {
+  width: 100%;
+  position: relative;
+}
+
+.hourly-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hourly-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.hourly-swiper .swiper-slide {
+  height: auto;
+  box-sizing: border-box;
+}
+.hourly-product-card {
+  width: 100%;
+  height: 270px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hourly-card-title {
+  width: 100%;
+  height: 22px;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ef394e;
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.hourly-card-content {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 10px;
+}
+.hourly-product-image {
+  width: 42%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hourly-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hourly-product-info {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hourly-product-name {
+  width: 100%;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.8;
+  color: #424750;
+  text-align: right;
+  margin: 0 0 12px;
+  overflow: hidden;
+}
+.hourly-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: ltr;
+  background-color: #ef1749;
+  color: #ffffff;
+  border-radius: 25px;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-bottom: 12px;
+}
+
+.hourly-countdown span {
+  padding: 8px 5px;
+}
+.hourly-countdown .countdown-label {
+  background-color: #ffe1e8;
+  color: #ef1749;
+  padding: 8px 10px;
+  font-size: 11px;
+}
+
+.hourly-price-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.hourly-discount {
+  background-color: #ef1749;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 3px 7px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.hourly-old-price {
+  color: #b5b5b5;
+  font-size: 10px;
+  font-weight: normal;
+}
+.hourly-current-price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #232933;
+  direction: rtl;
+}
+
+.hourly-current-price small {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.hourly-lock {
+  color: #ef1749;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.hourly-pagination {
+  width: 100%;
+  height: 12px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 5px;
+}
+.hourly-dot {
+  width: 7px;
+  height: 7px;
+
+  background-color: #d5d5d5;
+  border-radius: 50%;
+}
+
+.hourly-dot.active {
+  background-color: #222222;
+}
+.hourly-prev,
+.hourly-next {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  color: #555555;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transition: 0.2s;
+}
+
+.hourly-prev {
+  right: -5px;
+}
+
+.hourly-next {
+  left: -5px;
+}
+
+.hourly-prev:hover,
+.hourly-next:hover {
+  background-color: #f5f5f5;
+}
+
+.hourly-prev.swiper-button-disabled,
+.hourly-next.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* mobilee📱 */
+@media (max-width: 650px) {
+  .amazing-title-banner {
+    width: 100%;
+    height: 50px;
+    background-size: auto 50px;
+  }
+  .amazing-title-banner h2 {
+    font-size: 18px;
+  }
+  .hourly-offers {
+    width: 100%;
+    margin: 8px auto;
+    padding: 10px;
+    border-radius: 0;
+  }
+  .hourly-offers-header {
+    height: 35px;
+    margin-bottom: 8px;
+  }
+
+  .hourly-offers-header h2 {
+    font-size: 14px;
+  }
+
+  .hourly-offers-icon {
+    font-size: 18px;
+  }
+  .hourly-offers-slider {
+    width: 100%;
+  }
+
+  .hourly-swiper {
+    overflow: hidden;
+  }
+  .hourly-product-card {
+    height: 235px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .hourly-card-title {
+    height: 20px;
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+  .hourly-card-content {
+    gap: 8px;
+  }
+  .hourly-product-image {
+    width: 40%;
+  }
+  .hourly-product-name {
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 9px;
+  }
+  .hourly-countdown {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .hourly-countdown span {
+    padding: 6px 4px;
+  }
+  .hourly-countdown .countdown-label {
+    font-size: 10px;
+    padding: 6px 7px;
+  }
+  .hourly-price-row {
+    gap: 5px;
+    margin-bottom: 6px;
+  }
+  .hourly-discount {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+  .hourly-old-price {
+    font-size: 9px;
+  }
+  .hourly-current-price {
+    font-size: 12px;
+  }
+  .hourly-current-price small {
+    font-size: 9px;
+  }
+  .hourly-pagination {
+    margin-top: 4px;
+    height: 10px;
+  }
+  .hourly-dot {
+    width: 6px;
+    height: 6px;
+  }
+  .hourly-prev,
+  .hourly-next {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  .hourly-prev {
+    right: 0;
+  }
+
+  .hourly-next {
+    left: 0;
+  }
+}
+/* tablet🤳🤳 */
+@media (min-width: 651px) and (max-width: 1201px) {
+  .amazing-title-banner {
+    height: 55px;
+    background-size: auto 55px;
+  }
+  .amazing-title-banner h2 {
+    font-size: 21px;
+  }
+  .hourly-offers {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 12px;
+  }
+  .hourly-offers-header {
+    height: 35px;
+    margin-bottom: 8px;
+  }
+  .hourly-offers-header h2 {
+    font-size: 15px;
+  }
+  .hourly-product-card {
+    height: 250px;
+    padding: 10px;
+  }
+  .hourly-card-title {
+    font-size: 11px;
+  }
+  .hourly-card-content {
+    gap: 7px;
+  }
+  .hourly-product-image {
+    width: 40%;
+  }
+  .hourly-product-name {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .hourly-countdown {
+    font-size: 11px;
+    margin-bottom: 9px;
+  }
+  .hourly-countdown span {
+    padding: 7px 4px;
+  }
+  .hourly-countdown .countdown-label {
+    padding: 7px 8px;
+  }
+
+  .hourly-price-row {
+    gap: 5px;
+    margin-bottom: 6px;
+  }
+  .hourly-discount {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+  .hourly-old-price {
+    font-size: 9px;
+  }
+  .hourly-current-price {
+    font-size: 12px;
+  }
+
+  .hourly-prev,
+  .hourly-next {
+    width: 35px;
+    height: 35px;
+  }
+}
+/* desktop💻💻 */
+@media (min-width: 992px) {
+  .hourly-offers {
+    width: calc(100% - 30px);
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .hourly-offers-header {
+    height: 35px;
+    margin-bottom: 5px;
+  }
+  .hourly-offers-header h2 {
+    font-size: 16px;
+  }
+  .hourly-offers-slider {
+    width: 100%;
+    position: relative;
+  }
+  .hourly-swiper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hourly-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  .hourly-swiper .swiper-slide {
+    height: auto;
+  }
+  .hourly-product-card {
+    width: 100%;
+    height: 175px;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  .hourly-card-title {
+    height: 18px;
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+  .hourly-card-content {
+    flex: 1;
+    min-height: 0;
+    gap: 8px;
+  }
+  .hourly-product-image {
+    width: 38%;
+    height: 125px;
+    flex-shrink: 0;
+  }
+  .hourly-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hourly-product-info {
+    flex: 1;
+    min-width: 0;
+    justify-content: center;
+  }
+  .hourly-product-name {
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+  .hourly-countdown {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+  .hourly-countdown span {
+    padding: 6px 5px;
+  }
+  .hourly-countdown .countdown-label {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+  .hourly-price-row {
+    gap: 6px;
+    margin-bottom: 5px;
+  }
+  .hourly-discount {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .hourly-old-price {
+    font-size: 9px;
+  }
+
+  .hourly-current-price {
+    font-size: 12px;
+    gap: 3px;
+  }
+  .hourly-current-price small {
+    font-size: 10px;
+  }
+  .hourly-lock {
+    font-size: 13px;
+  }
+  .hourly-pagination {
+    height: 8px;
+    margin-top: 2px;
+    gap: 5px;
+  }
+  .hourly-dot {
+    width: 6px;
+    height: 6px;
+  }
+  .hourly-prev,
+  .hourly-next {
+    width: 38px;
+    height: 38px;
+  }
+}

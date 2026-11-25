@@ -1,0 +1,112 @@
+.mobile-category {
+  width: 100%;
+  height: 100px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  direction: rtl;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  background-color: #f1f2f4;
+}
+.mobile-category::-webkit-scrollbar {
+  display: none;
+}
+.category-item {
+  width: 102px;
+  min-width: 102px;
+  height: 72px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #e0e0e2;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #3f4064;
+  box-sizing: border-box;
+}
+.category-item img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 3px;
+}
+.category-item span {
+  font-family: digi, sans-serif;
+  font-size: 12px;
+  color: #3f4064;
+  white-space: nowrap;
+}
+.category-item.active {
+  background-color: #ef394e;
+  border-color: #ef394e;
+}
+.category-item.active span {
+  color: #fff;
+  font-weight: bold;
+}
+/* MOBILE 📱📱*/
+@media (max-width: 650px) {
+  .mobile-category {
+    display: flex;
+    height: 90px;
+    padding: 8px;
+    gap: 7px;
+    flex-direction: row-reverse;
+  }
+}
+.top-banner {
+  display: none;
+}
+.category-item {
+  width: 88px;
+  min-width: 88px;
+  height: 70px;
+}
+.category-item img {
+  width: 32px;
+  height: 32px;
+}
+.category-item span {
+  font-size: 10px;
+}
+/* tablet🤳 */
+@media (min-width: 651px) and (max-width: 1200px) {
+  .mobile-category {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    gap: 8px;
+    overflow-x: auto;
+  }
+  .top-banner {
+    display: none;
+  }
+  .category-item {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 78px;
+    gap: 5px;
+    font-size: 12px;
+  }
+  .category-item img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+  }
+}
+/* DESKTOP💻 */
+@media (min-width: 1201px) and (max-width: 2000px) {
+  .mobile-category {
+    display: none;
+  }
+}

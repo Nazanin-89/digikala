@@ -1,0 +1,127 @@
+.services-section {
+  width: 100%;
+  padding: 25px 70px;
+  margin: 0;
+  background-color: #fff;
+  direction: rtl;
+  box-sizing: border-box;
+}
+.services-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  justify-items: center;
+  align-items: start;
+  gap: 10px;
+}
+.service-item {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #23254e;
+  gap: 8px;
+}
+.service-icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.service-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.service-item:hover .service-icon {
+  transform: translateY(-3px);
+}
+.service-item p {
+  width: 100%;
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.8;
+  text-align: center;
+  color: #23254e;
+}
+/* tablet🤳🤳 */
+@media (min-width: 651px) and (max-width: 1200px) {
+  .services-section {
+    padding: 20px 15px;
+    overflow: hidden;
+  }
+  .services-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
+    gap: 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .services-container::-webkit-scrollbar {
+    display: none;
+  }
+  .service-item {
+    flex: 0 0 78px;
+    width: 78px;
+  }
+  .service-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+  }
+  .service-item p {
+    font-size: 11px;
+  }
+}
+/* MOBILE📱📱📱 */
+@media (max-width: 650px) {
+  .services-section {
+    padding: 18px 10px;
+    overflow: hidden;
+  }
+  .services-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .services-container::-webkit-scrollbar {
+    display: none;
+  }
+  .service-item {
+    flex: 0 0 62px;
+    width: 62px;
+  }
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+  .service-item p {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+}
